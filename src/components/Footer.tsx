@@ -108,17 +108,15 @@ export default function Footer() {
           <p className="text-white/30 font-body text-xs">
             © 2024 Bite Club. Todos los derechos reservados.
           </p>
-          <p className="text-white/20 font-body text-xs">
-            Built with{" "}
-            <span className="text-white/40">Claude Web Builder</span>
-            {" "}by{" "}
+          <p className="text-white/30 font-body text-xs">
+            Creado por{" "}
             <a
-              href="https://tododeia.com"
+              href="https://encende.click"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/40 hover:text-white/60 transition-colors"
+              className="text-white/50 hover:text-white transition-colors"
             >
-              Tododeia
+              Encende.click
             </a>
           </p>
         </div>
