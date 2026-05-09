@@ -17,6 +17,7 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://biteclub.encende.click"),
   title: "Bite Club — Smash Burgers | Ituzaingó",
   description:
     "Las mejores smash burgers artesanales de Ituzaingó. Armala a tu manera. Pedí por WhatsApp, PedidosYa o Rappi.",
@@ -26,6 +27,14 @@ export const metadata: Metadata = {
     description: "Armala a tu manera. Smash burgers artesanales en Ituzaingó.",
     type: "website",
     locale: "es_AR",
+    url: "https://biteclub.encende.click",
+    images: [{ url: "/opengraph-image.png", width: 512, height: 512, alt: "Bite Club Burgers" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Bite Club — Smash Burgers",
+    description: "Armala a tu manera. Smash burgers artesanales en Ituzaingó.",
+    images: ["/opengraph-image.png"],
   },
 };
 
