@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 const WA_NUMBER = "5491100000000"; // TODO: Replace with real WhatsApp number
 const WA_MESSAGE = "Hola%20Bite%20Club!%20Quiero%20hacer%20un%20pedido";
@@ -50,12 +51,14 @@ export default function Navigation() {
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 bg-bite-yellow rounded-full flex items-center justify-center">
-              <span className="text-bite-blue text-xs font-heading font-black leading-none">BC</span>
-            </div>
-            <span className="font-heading font-black text-white text-xl tracking-wider uppercase">
-              Bite Club
-            </span>
+            <Image
+              src="/logo-bite.png"
+              alt="Bite Club Burgers"
+              width={44}
+              height={44}
+              className="rounded-full drop-shadow-md"
+              priority
+            />
           </a>
 
           {/* Desktop nav */}

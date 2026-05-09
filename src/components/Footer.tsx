@@ -1,4 +1,5 @@
 import { MessageCircle, Share2 } from "lucide-react";
+import Image from "next/image";
 
 const WA_NUMBER = "5491100000000"; // TODO: Replace with real WhatsApp number
 const WA_URL = `https://wa.me/${WA_NUMBER}?text=Hola%20Bite%20Club!%20Quiero%20hacer%20un%20pedido`;
@@ -17,10 +18,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-bite-yellow rounded-full flex items-center justify-center">
-                <span className="text-bite-blue text-xs font-heading font-black leading-none">BC</span>
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo-bite.png"
+                alt="Bite Club Burgers"
+                width={52}
+                height={52}
+                className="rounded-full drop-shadow-md"
+              />
               <span className="font-heading font-black text-white text-xl tracking-wider uppercase">
                 Bite Club
               </span>
